@@ -12,22 +12,22 @@
             </div>
             <div class="flip-card-back">
                 <mat-card-content>
-                    <p>Country: Brazil</p>
                     <p>Skills: Angular, C#, ASP.NET MVC Core, Java, PostgreSQL, MySQL, Git/Github, HTML, CSS, JavaScript, TypeScript,
                         SCRUM, Azure DevOps CI/CD, AWS Lambda, AWS S3, HangFire, Node.</p>
                     <p>Experience: FullStack Developer (Frontend Angular / Backend .NET).</p>
+                    <p>Projects:</p>
                     <div class="conteudo">
-                        <button mat-icon-button>
-                            <mat-icon>thumb_up_off_alt</mat-icon>
+                        <button mat-icon-button (click)="abrirProjeto1()" matTooltip="{{projeto1}}">
+                            <mat-icon>looks_one</mat-icon>
                         </button>
-                        <button mat-icon-button>
-                            <mat-icon>share</mat-icon>
+                        <button mat-icon-button (click)="abrirProjeto2()" matTooltip="{{projeto2}}">
+                            <mat-icon>looks_two</mat-icon>
                         </button>
-                        <button mat-icon-button>
-                            <mat-icon>favorite_border</mat-icon>
+                        <button mat-icon-button (click)="abrirProjeto3()" matTooltip="{{projeto3}}">
+                            <mat-icon>looks_3</mat-icon>
                         </button>
-                        <button mat-icon-button>
-                            <mat-icon>zoom_in</mat-icon>
+                        <button mat-icon-button (click)="abrirProjeto4()" matTooltip="{{projeto4}}">
+                            <mat-icon>looks_4</mat-icon>
                         </button>
                     </div>
                 </mat-card-content>
