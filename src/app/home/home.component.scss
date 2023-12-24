@@ -1,0 +1,257 @@
+.arrow {
+    left: 50px;
+    top: 50px;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 10;
+}
+
+.mat-icon {
+    height: 48px !important;
+    width: 48px !important;
+    font-size: 48px !important;
+    transform-origin: 0% 50%;
+    animation: slide1 2s ease-in-out infinite;
+}
+
+.titulo {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 10;
+}
+
+.titulo h1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 5rem;
+    line-height: 5rem;
+    color: #FFF;
+    filter: drop-shadow(0 0 0.75rem #f52500);
+    animation: interference 2s infinite;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    padding: 30px;
+    margin-top: 105vh;
+}
+
+section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+section .side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .side#side1 {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+section .side#side2 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+section .side video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
+
+h1 {
+    padding-top: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+h2 {
+    padding-top: 50px;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1.2em;
+    text-indent: 3.125rem;
+    text-align: justify;
+    letter-spacing: 0.1875rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.loading {
+    z-index: -1;
+    margin-top: 3.125rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    animation: fadeIn var(--dur1) linear forwards;
+}
+
+.status__dot {
+    animation: appear1 var(--dur1) var(--dur1) steps(1, start) infinite;
+    display: inline-block;
+}
+
+.status__dot:nth-child(2) {
+    animation: appear2 var(--dur1) var(--dur1) steps(1, start) infinite;
+}
+
+.status__dot:nth-child(3) {
+    animation: appear3 var(--dur1) var(--dur1) steps(1, start) infinite;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+
+    from,
+    67% {
+        opacity: 0;
+    }
+
+    83.3%,
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appear1 {
+    from {
+        visibility: hidden;
+    }
+
+    33%,
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes appear2 {
+
+    from,
+    33% {
+        visibility: hidden;
+    }
+
+    67%,
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes appear3 {
+
+    from,
+    67% {
+        visibility: hidden;
+    }
+
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes slide1 {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 50px);
+    }
+}
+
+@keyframes interference {
+    0% {
+        transform: skewX(0)
+    }
+
+    31% {
+        transform: skewX(-2deg)
+    }
+
+    31.5% {
+        transform: skewX(89deg)
+    }
+
+    32% {
+        transform: skewX(89deg)
+    }
+
+    32.1% {
+        transform: skewX(0)
+    }
+
+    33% {
+        transform: skewX(2deg)
+    }
+
+    54% {
+        transform: skewX(0deg)
+    }
+
+    94% {
+
+        transform: skewX(2deg)
+    }
+
+    95.1% {
+        transform: skewX(-3deg)
+    }
+
+    95.2% {
+        transform: skewX(-89deg)
+    }
+
+    95.3% {
+        transform: skewX(2deg)
+    }
+
+    100% {
+        transform: skewX(0)
+    }
+}
