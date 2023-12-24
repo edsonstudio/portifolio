@@ -17,15 +17,15 @@ export class CardComponent {
   }
 
   abrirProjeto1() {
-    window.open("https://desenvolvimento-spa-com-angular.vercel.app/'", "_blank");
+    window.open("https://desenvolvimento-spa-com-angular.vercel.app", "_blank");
   }
 
   abrirProjeto2() {
-    window.open("https://angular-avancado.vercel.app/", "_blank");
+    window.open("https://angular-avancado.vercel.app", "_blank");
   }
 
   abrirProjeto3() {
-    window.open("https://angular-final.vercel.app/", "_blank");  
+    window.open("https://angular-final.vercel.app", "_blank");  
   }
 
   abrirProjeto4() {
